@@ -1,17 +1,15 @@
 # site settings
-title: Forty
-subtitle: by HTML5 UP
-email: youremailaddress@gmail.com
-description: A responsive site template designed by HTML5 Up<br /> and released under the Creative Commons.
+title: OSS Project
+subtitle: by Team1
+email: email@gmail.com
+description: This project is ralated to Algorithm<br /> We add more algorithms.
 baseurl: "/2019-2-OSS-L1" # the subpath of your site, e.g. /blog
 url: "https://19-2-skku-oss.github.io"# the base hostname & protocol for your site
 author:
-street_address: 1234 Somewhere Road
-city: Nashville
-state: TN
-zip_code: 55555
-country: United States of America
-phone: (716) 555-5555
+street_address: Sungkyunkwam Univ.
+city: Suwon
+country: Republic of Korea
+phone: (031) 555-5555
 
 # homepage tiles
 tiles-source: pages # accepts "posts" or "pages"
