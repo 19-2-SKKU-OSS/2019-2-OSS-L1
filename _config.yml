@@ -2,7 +2,7 @@
 title: OSS Project
 subtitle: by Team1
 email: email@gmail.com
-description: This project is ralated to Algorithm<br /> We add more algorithms<br /> <a href="https://github.com/19-2-SKKU-OSS/2019-2-OSS-L1">Our Github</a>
+description: This project is ralated to Algorithm<br /> We add more algorithms
 baseurl: "/2019-2-OSS-L1" # the subpath of your site, e.g. /blog
 url: "https://19-2-skku-oss.github.io"# the base hostname & protocol for your site
 author:
