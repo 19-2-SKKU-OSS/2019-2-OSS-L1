@@ -1,7 +1,7 @@
 ---
-title: Landing
+title: Contributers
 layout: landing
-description: 'Lorem ipsum dolor sit amet nullam consequa<br />sed veroeros. tempus adipiscing nulla.'
+description: 'Our Team Members'
 image: assets/images/pic07.jpg
 nav-menu: true
 ---
