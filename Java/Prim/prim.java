@@ -50,14 +50,14 @@ static int result;
 		visit = new boolean[N+1];
 		result = 0;
 		pq = new PriorityQueue<A>();
-		int ta;
-		int tb;
-		int tc;
+		int ts;
+		int te;
+		int tw;
 		for( int i =0;i<E;i++){
-			ta = scan.nextInt();
-			tb = scan.nextInt();
-			tc = scan.nextInt();
-			pq.add(new A(ta,tb,tc));
+			ts = scan.nextInt();
+			te = scan.nextInt();
+			tw = scan.nextInt();
+			pq.add(new A(ts,te,tw));
 		}
 		for(int i = 1; i<=N;i++){
 			parent[i] = i;
