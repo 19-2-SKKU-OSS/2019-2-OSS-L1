@@ -11,10 +11,10 @@ nav-menu: true
 
 <section id="one" class="spotlights">
 	<section>
-		<a href="generic.html" class="image">
-			<img src="assets/images/pic08.jpg" alt="" data-position="center center" />
-		</a>
 		<div class="content">
+			<a href="generic.html" class="image">
+				<img src="assets/images/pic08.jpg" alt="" data-position="center center" />
+			</a>
 			<div class="inner">
 				<header class="major">
 					<h3>김윤호</h3>
