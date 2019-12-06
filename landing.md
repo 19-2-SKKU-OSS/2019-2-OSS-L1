@@ -19,7 +19,7 @@ nav-menu: true
 				<header class="major">
 					<h3>김윤호</h3>
 				</header>
-				<p><h6>소프트웨어학과<br/>GitHub ID : rladbsgh7586</h6>python 알고리즘 구현<br/>Issue관리</p>
+				<p><h4>소프트웨어학과<br/>GitHub ID : rladbsgh7586</h4>python 알고리즘 구현<br/>Issue관리</p>
 				<ul class="actions">
 					<li><a href="generic.html" class="button">github</a></li>
 				</ul>
