@@ -13,7 +13,7 @@ nav-menu: true
 	<section>
 		<div class="content">
 			<a href="generic.html" class="image">
-				<img src="assets/images/kimyoonho.jpg" alt="" data-position="center center" />
+				<img src="assets/images/kimyoonho.jpg" alt="" width="180" height="240" data-position="center center" />
 			</a>
 			<div class="inner">
 				<header class="major">
