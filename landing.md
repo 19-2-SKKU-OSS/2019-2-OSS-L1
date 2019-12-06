@@ -25,6 +25,20 @@ nav-menu: true
 				</ul>
 			</div>
 		</div>
+		<a href="generic.html" class="image">
+			<img src="assets/images/pic08.jpg" alt="" data-position="center center" />
+		</a>
+		<div class="content">
+			<div class="inner">
+				<header class="major">
+					<h3>김윤호</h3>
+				</header>
+				<p><h4>소프트웨어학과<br/>GitHub ID : rladbsgh7586</h4><li>python 알고리즘 구현</li><li>Issue관리</li></p>
+				<ul class="actions">
+					<li><a href="https://github.com/rladbsgh7586" target="_blank" class="button">github</a></li>
+				</ul>
+			</div>
+		</div>
 	</section>
 	<section>
 		<a href="generic.html" class="image">
