@@ -21,7 +21,7 @@ nav-menu: true
 				</header>
 				<p><h4>소프트웨어학과<br/>GitHub ID : rladbsgh7586</h4><li>python 알고리즘 구현</li><li>Issue관리</li></p>
 				<ul class="actions">
-					<li><a href="https://github.com/rladbsgh7586" class="button">github</a></li>
+					<li><a href="https://github.com/rladbsgh7586" target="_blank" class="button">github</a></li>
 				</ul>
 			</div>
 		</div>
