@@ -19,7 +19,7 @@ nav-menu: true
 				<header class="major">
 					<h3>김윤호</h3>
 				</header>
-				<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis tempus.</p>
+				<p><h6>소프트웨어학과</h6><h6>GitHub ID : rladbsgh7586</h6>-python 알고리즘 구현  -Isuue </p>
 				<ul class="actions">
 					<li><a href="generic.html" class="button">github</a></li>
 				</ul>
