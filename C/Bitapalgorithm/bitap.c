@@ -91,14 +91,14 @@
         
 	    printf("Enter Text\n");
 
-        char*  text;
+        char*  text=malloc(sizeof(char)*CHAR_MAX);
 
         scanf("%s",text);
 	printf("Enter Pattern\n");
 
       
 
-        char* pattern;
+        char* pattern=malloc(sizeof(char)*CHAR_MAX);
 
         scanf("%s", pattern);
 
