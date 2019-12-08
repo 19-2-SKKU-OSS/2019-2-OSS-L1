@@ -30,5 +30,6 @@ int levenshtein(string& input1, string& input2){
 }
 int main(){
 	cin>>input1>>input2;
-	cout<<"편집 거리 :"<<levenshtein(input1,input2)<<endl;
+	int result = levenshtein(input1,input2);
+	cout<<"편집 거리 :"<<result<<endl;
 }
