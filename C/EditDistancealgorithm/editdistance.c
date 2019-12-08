@@ -31,7 +31,8 @@ int main(){
 	scanf("%s",input2);
 `
         int result = levenshtein(input1,input2);
-        cout<<"편집 거리 :"<<result<<endl;
+       
+	printf("편집 거리 : %d\n",result);
 }
 
 
