@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <string.h>
-#include <algorithm>
 
 const char* input1,input2;
 int dist[1001][1001];
