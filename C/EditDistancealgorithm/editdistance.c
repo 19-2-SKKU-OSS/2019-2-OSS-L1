@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include <limits.h>
 
 const char* input1 = malloc(sizeof(char)*CHAR_MAX);
 const char* input2 = malloc(sizeof(char)*CHAR_MAX);
