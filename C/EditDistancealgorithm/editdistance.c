@@ -2,9 +2,6 @@
 #include <string.h>
 #include <stdlib.h>
 #include <limits.h>
-
-const char* input1 = malloc(sizeof(char)*CHAR_MAX);
-const char* input2 = malloc(sizeof(char)*CHAR_MAX);
 int dist[1001][1001];
 
 int min(int a, int b)
@@ -14,7 +11,7 @@ int min(int a, int b)
 	else return b;
 }
 
-int levenshtein(const char* input1,const char* input2){
+int levenshtein(char* input1,char* input2){
         for(int i =1;i<=strlen(input1);i++){
                 dist[i][0] = i;
         }
@@ -36,7 +33,10 @@ int levenshtein(const char* input1,const char* input2){
         return dist[strlen(input1)][strlen(input2)];
 }
 int main(){
-        scanf("%s",input1);
+        char* input1 = malloc(sizeof(char)*CHAR_MAX);
+	char* input2 = malloc(sizeof(char)*CHAR_MAX);
+
+	scanf("%s",input1);
 	scanf("%s",input2);
 
         int result = levenshtein(input1,input2);
