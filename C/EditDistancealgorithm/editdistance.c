@@ -20,7 +20,7 @@ int levenshtein(char* input1, char* input2){
                 dist[0][j] = j;
         }
         for(int j =1;j<=strlen(input2);j++){
-                for(int i =1; i<=input1.length();i++){
+                for(int i =1; i<=strlen(input1);i++){
                         if(input1[i-1] == input2[j-1])  dist[i][j] = dist[i-1][j-1];
                         else
                                 dist[i][j] = min(dist[i-1][j-1] + 1,min(dist[i][j-1]+1,dist[i-1][j]+1));
