@@ -3,6 +3,8 @@
 #include <memory.h>
 
 #define SIZE 50
+//in C, there is no <queue> header file
+//so we must add function about Queue
 typedef struct Queue{ 
 	int items[SIZE];
        	int front; 
