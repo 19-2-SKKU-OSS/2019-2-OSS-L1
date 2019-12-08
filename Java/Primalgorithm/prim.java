@@ -4,8 +4,11 @@ import java.util.Comparator;
 import java.util.PriorityQueue;
 
 class A implements Comparable<A>{
+	//start
 	int s;
+	//end
 	int e;
+	//weight
 	int v;
 	public A(int s, int e, int v){
 		super();
@@ -18,6 +21,7 @@ class A implements Comparable<A>{
 		return arg0.v >= this.v ? -1 : 1;
 	}
 }
+//prim function
 public class prim {
 	public static int find(int a){
 		if(a==parent[a]) return a;
@@ -35,12 +39,15 @@ public class prim {
 		}
 	}
 
+	//global variable
 static int N;
 static int E;
 static PriorityQueue<A> pq;
 static int[] parent;
 static boolean[] visit;
 static int result;
+
+//main function
 	public static void main(String[] args) throws Exception {
 		Scanner scan = new Scanner(System.in);
 		N = scan.nextInt();
