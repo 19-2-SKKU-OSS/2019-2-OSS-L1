@@ -27,7 +27,7 @@ int levenshtein(char* input1, char* input2){
                 }
         }
         for(int j=0;j<=strlen(input2);j++){
-                for(int i=0;i<=input1.length();i++)
+                for(int i=0;i<=strlen(input1);i++)
                         printf("%d\t",dist[i][j]);
                         printf("\n");
         }
