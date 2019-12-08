@@ -118,7 +118,7 @@
 
             String pattern = br.readLine();
 
-            bitap b = new Bitap(); 
+            bitap b = new bitap(); 
 
             b.findPattern(text, pattern);             
 
