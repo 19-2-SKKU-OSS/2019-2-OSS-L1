@@ -39,6 +39,8 @@ nav-menu: true
 				</ul>
 			</div>
 		</div>
+	</section>
+	<section>
 		<div class="content">
 			<a href="generic.html" class="image">
 				<img src="assets/images/seongjooyoung.jpg" alt="" width="180" height="240" data-position="center center" />
@@ -67,6 +69,8 @@ nav-menu: true
 				</ul>
 			</div>
 		</div>
+	</section>
+	<section>
 		<div class="content">
 			<a href="generic.html" class="image">
 				<img src="assets/images/leesanha.jpg" alt="" width="180" height="240" data-position="center center" />
