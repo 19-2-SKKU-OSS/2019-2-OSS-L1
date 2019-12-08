@@ -12,7 +12,7 @@ int min(int a, int b)
 	else return b;
 }
 
-int levenshtein(const char* input1, char* input2){
+int levenshtein(const char* input1,const char* input2){
         for(int i =1;i<=strlen(input1);i++){
                 dist[i][0] = i;
         }
