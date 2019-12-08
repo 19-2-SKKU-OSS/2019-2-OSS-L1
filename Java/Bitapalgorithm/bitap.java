@@ -16,7 +16,7 @@
 
     /** Class Bitap **/
 
-    public class Bitap
+    public class bitap
 
     {
 
