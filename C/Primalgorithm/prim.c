@@ -1,14 +1,13 @@
-/*
- * C Program to find MST(Minimum Spanning Tree) using 
- * Prim's Algorithm
- */
 #include <stdio.h>
 
 struct node
 {
     int fr, to, cost;
 }p[6];
+
 int c = 0, temp1 = 0, temp = 0;
+
+//function prim
 void prims(int *a, int b[][7], int i, int j)
 {
     a[i] = 1;
@@ -35,8 +34,11 @@ void prims(int *a, int b[][7], int i, int j)
             }
         }
         a[temp1] = 1;
+	//source node
         p[c].fr = temp;
+	//destination node
         p[c].to = temp1;
+	//weight of node
         p[c].cost = min;
         c++;       
         b[temp][temp1] = b[temp1][temp]=1000;
@@ -48,6 +50,7 @@ void prims(int *a, int b[][7], int i, int j)
 	    printf("weight of node : %d\n",p[k].cost);
     }
 }
+//main function
 int main()
 {
     int a[7];
