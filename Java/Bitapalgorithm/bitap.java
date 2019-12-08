@@ -1,10 +1,6 @@
-    /**
 
-     ** Java Program to implement Bitap Algorithm
-
-     **/
-
-     
+//Bitap Algorithm
+ // for Java     
 
     import java.io.BufferedReader;
 
@@ -30,7 +26,8 @@
 
             char[] pattern = p.toCharArray();
 
-            int pos = bitap_search(text, pattern);
+        //pattern found at position
+	    int pos = bitap_search(text, pattern);
 
             if (pos == -1)
 
@@ -120,6 +117,7 @@
 
             bitap b = new bitap(); 
 
+	    //call function findPattern
             b.findPattern(text, pattern);             
 
         }
