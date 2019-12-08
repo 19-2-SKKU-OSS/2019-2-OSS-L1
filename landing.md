@@ -11,7 +11,7 @@ nav-menu: true
 
 <section id="one" class="spotlights">
 	<section>
-		<div style="float: left; width: 50%;">
+		<div style="float: left; width: 33%;">
 			<a href="generic.html" class="image">
 				<img src="assets/images/kimyoonho.jpg" alt="" width="180" height="240" data-position="center center" />
 			</a>
@@ -25,7 +25,7 @@ nav-menu: true
 				</ul>
 			</div>
 		</div>
-		<div style="float: left; width: 50%;">
+		<div style="float: left; width: 33%;">
 			<a href="generic.html" class="image">
 				<img src="assets/images/seolchaeeun.jpg" alt="" width="180" height="240" data-position="center center" />
 			</a>
@@ -39,9 +39,7 @@ nav-menu: true
 				</ul>
 			</div>
 		</div>
-	</section>
-	<section>
-		<div style="float: left; width: 50%;">
+		<div style="float: left; width: 33%;">
 			<a href="generic.html" class="image">
 				<img src="assets/images/seongjooyoung.jpg" alt="" width="180" height="240" data-position="center center" />
 			</a>
@@ -55,6 +53,8 @@ nav-menu: true
 				</ul>
 			</div>
 		</div>
+	</section>
+	<section>
 		<div style="float: left; width: 50%;">
 			<a href="generic.html" class="image">
 				<img src="assets/images/yoonsohee.jpg" alt="" width="180" height="240" data-position="center center" />
@@ -69,9 +69,7 @@ nav-menu: true
 				</ul>
 			</div>
 		</div>
-	</section>
-	<section>
-		<div>
+		<div style="float: left; width: 50%;">
 			<a href="generic.html" class="image">
 				<img src="assets/images/leesanha.jpg" alt="" width="180" height="240" data-position="center center" />
 			</a>
