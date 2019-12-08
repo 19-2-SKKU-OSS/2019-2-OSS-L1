@@ -1,8 +1,16 @@
 #include <stdio.h>
 #include <string.h>
 
+
 const char* input1,input2;
 int dist[1001][1001];
+
+int min(int a, int b)
+{
+	if (a<=b)
+ 		 return a;
+	else return b;
+}
 
 int levenshtein(char* input1, char* input2){
         for(int i =1;i<=input1.length();i++){
@@ -28,7 +36,7 @@ int levenshtein(char* input1, char* input2){
 int main(){
         scanf("%s",input1);
 	scanf("%s",input2);
-`
+
         int result = levenshtein(input1,input2);
        
 	printf("편집 거리 : %d\n",result);
