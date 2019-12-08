@@ -50,7 +50,9 @@ static int result;
 //main function
 	public static void main(String[] args) throws Exception {
 		Scanner scan = new Scanner(System.in);
+		//input number of vertex
 		N = scan.nextInt();
+		//input number of edge
 		E = scan.nextInt();
 		
 		parent = new int[N+1];
@@ -61,8 +63,11 @@ static int result;
 		int tb;
 		int tc;
 		for( int i =0;i<E;i++){
+			//input start vertex
 			ta = scan.nextInt();
+			//input end vertex
 			tb = scan.nextInt();
+			//input weight
 			tc = scan.nextInt();
 			pq.add(new A(ta,tb,tc));
 		}
@@ -79,6 +84,7 @@ static int result;
 			union(start,end);
 			result += oneNode.v;
 		}
+		//print output
 		System.out.println(result);
 	}
 }
