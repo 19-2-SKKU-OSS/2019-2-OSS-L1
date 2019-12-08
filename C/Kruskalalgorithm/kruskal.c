@@ -1,5 +1,9 @@
 #include <stdio.h>
 
+//max number of vertex
+//==15
+//max number of edge
+//==30
 #define MAX_VER     15
 #define MAX_EDGE    30
 
@@ -31,6 +35,7 @@ int main( void)
     int i;
     int s, d;
 
+    //number of times to run
     printf("Number of times to run: "); 
     scanf("%d", &tc);
 
@@ -40,6 +45,9 @@ int main( void)
         printf("Number of vertices and edges : ");
 	scanf("%d%d", &nv, &ne);
 
+	//input start
+	//input destination
+	//input weight
         for( i = 0 ; i < ne ; i ++)
         {
 	    printf("start and destination : ");
@@ -56,22 +64,21 @@ int main( void)
     }
 
     return 0;
+
 }
 
-/*
-    make_set()
-    create a new set whose only member is itself.
-*/
+//make_Set()
+//create a new set whose only member is itself
 void make_set( int v)
 {
     vt[v].p     = v;
     vt[v].rank  = 0;
 }
 
-/*
-    find_set()
-    returns a pointer to the representative of the set.
-*/
+
+//find_set()
+//returns a pointer to the representative of the set
+
 int find_set( int v)
 {
     if( vt[v].p != v)
@@ -82,10 +89,9 @@ int find_set( int v)
     return vt[v].p;
 }
 
-/*
-    connect()
-    unites the dynamic sets that contain two elements.
-*/
+//connect()
+//unites the dynamic sets that contain two elements
+
 void connect( int v, int u)
 {
     v   = find_set( v);
@@ -108,10 +114,10 @@ void connect( int v, int u)
     }
 }
 
-/*
-    mst_kruskal()
-    it uses disjoint-set and finds a safe edge.
-*/
+
+//mst_kruskal()
+//it uses disjoint-set and finds a safe edge
+
 void mst_kruskal( int nv, int ne)
 {
     int i;
@@ -141,10 +147,10 @@ void mst_kruskal( int nv, int ne)
     }
 }
 
-/*
-    sort_edge()
-    sort the edges by heap sort
-*/
+
+//sort_edge()
+//sort the edges by heap sort
+
 void sort_edge( int ne)
 {
     EDGE temp;
@@ -162,10 +168,10 @@ void sort_edge( int ne)
     }
 }
 
-/*
-    max_heapify()
-    maintain the characteristic of the heap.
-*/
+
+//max_heapify()
+//maintain the characteristic of the heap
+
 void max_heapify( int index, int size)
 {
     EDGE temp;
@@ -193,10 +199,10 @@ void max_heapify( int index, int size)
     }
 }
 
-/*
-    build_max_heap()
-    make the max heap
-*/
+
+//build_max_heap()
+//make the max heap
+//
 void build_max_heap( int ne)
 {
     int i;
