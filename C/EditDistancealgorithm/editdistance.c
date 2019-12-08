@@ -27,7 +27,9 @@ int levenshtein(char* input1, char* input2){
         return dist[input1.length()][input2.length()];
 }
 int main(){
-        cin>>input1>>input2;
+        scanf("%s",input1);
+	scanf("%s",input2);
+`
         int result = levenshtein(input1,input2);
         cout<<"편집 거리 :"<<result<<endl;
 }
