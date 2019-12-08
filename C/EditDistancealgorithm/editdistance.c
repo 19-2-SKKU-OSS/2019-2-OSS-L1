@@ -13,7 +13,7 @@ int min(int a, int b)
 }
 
 int levenshtein(char* input1, char* input2){
-        for(int i =1;i<=input1.length();i++){
+        for(int i =1;i<=strlen(input1);i++){
                 dist[i][0] = i;
         }
         for(int j =1;j<=input2.length();j++){
