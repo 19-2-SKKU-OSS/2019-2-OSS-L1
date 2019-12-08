@@ -105,17 +105,13 @@ void BFS(Graph* graph, int vertex){
 	} 
 } 
 int main(void) { 
-	Graph *graph; graph = makeGraph(8); 
+	Graph *graph; graph = makeGraph(4); 
 	addEdge(graph, 0, 1); 
 	addEdge(graph, 0, 2); 
-	addEdge(graph, 1, 3); 
-	addEdge(graph, 1, 4); 
-	addEdge(graph, 3, 7);
-       	addEdge(graph, 4, 7);
-       	addEdge(graph, 2, 5);
-       	addEdge(graph, 2, 6);
-       	addEdge(graph, 6, 7);
-       	addEdge(graph, 5, 7);
+	addEdge(graph, 1, 2); 
+	addEdge(graph, 2, 0); 
+	addEdge(graph, 2, 3);
+       	addEdge(graph, 3, 3);
        	printGraph(graph);
        	BFS(graph, 0);
        
