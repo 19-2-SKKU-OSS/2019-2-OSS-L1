@@ -27,7 +27,7 @@ nav-menu: true
 		</div>
 		<div class="content">
 			<a href="generic.html" class="image">
-				<img src="assets/images/kimyoonho.jpg" alt="" width="180" height="240" data-position="center center" />
+				<img src="assets/images/seolchaeeun.jpg" alt="" width="180" height="240" data-position="center center" />
 			</a>
 			<div class="inner">
 				<header class="major">
@@ -41,7 +41,7 @@ nav-menu: true
 		</div>
 		<div class="content">
 			<a href="generic.html" class="image">
-				<img src="assets/images/kimyoonho.jpg" alt="" width="180" height="240" data-position="center center" />
+				<img src="assets/images/seongjooyoung.jpg" alt="" width="180" height="240" data-position="center center" />
 			</a>
 			<div class="inner">
 				<header class="major">
@@ -55,7 +55,7 @@ nav-menu: true
 		</div>
 		<div class="content">
 			<a href="generic.html" class="image">
-				<img src="assets/images/kimyoonho.jpg" alt="" width="180" height="240" data-position="center center" />
+				<img src="assets/images/yoonsohee.jpg" alt="" width="180" height="240" data-position="center center" />
 			</a>
 			<div class="inner">
 				<header class="major">
@@ -69,13 +69,13 @@ nav-menu: true
 		</div>
 		<div class="content">
 			<a href="generic.html" class="image">
-				<img src="assets/images/kimyoonho.jpg" alt="" width="180" height="240" data-position="center center" />
+				<img src="assets/images/leesanha.jpg" alt="" width="180" height="240" data-position="center center" />
 			</a>
 			<div class="inner">
 				<header class="major">
 					<h3>이산하</h3>
 				</header>
-				<p><h4>소프트웨어학과<br/>GitHub ID : Ehqht</h4><liC언어, C++ 알고리즘 구현</li><li>이미 구현된 알고리즘 코드 리뷰 및 수정</li></p>
+				<p><h4>소프트웨어학과<br/>GitHub ID : Ehqht</h4><li>C언어, C++ 알고리즘 구현</li><li>이미 구현된 알고리즘 코드 리뷰 및 수정</li></p>
 				<ul class="actions">
 					<li><a href="https://github.com/Ehqht" target="_blank" class="button">github</a></li>
 				</ul>
