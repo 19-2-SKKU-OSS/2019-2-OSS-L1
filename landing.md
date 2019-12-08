@@ -40,6 +40,7 @@ nav-menu: true
 			</div>
 		</div>
 	</section>
+<section id="two" class="spotlights">
 	<section>
 		<div class="content">
 			<a href="generic.html" class="image">
@@ -70,6 +71,7 @@ nav-menu: true
 			</div>
 		</div>
 	</section>
+<section id="three" class="spotlights">
 	<section>
 		<div class="content">
 			<a href="generic.html" class="image">
