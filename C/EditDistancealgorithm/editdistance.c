@@ -26,7 +26,7 @@ int levenshtein(char* input1, char* input2){
                                 dist[i][j] = min(dist[i-1][j-1] + 1,min(dist[i][j-1]+1,dist[i-1][j]+1));
                 }
         }
-        for(int j=0;j<=input2.length();j++){
+        for(int j=0;j<=strlen(input2);j++){
                 for(int i=0;i<=input1.length();i++)
                         printf("%d\t",dist[i][j]);
                         printf("\n");
