@@ -22,14 +22,14 @@
 			</colgroup>
 			<thead>
 				<tr>
-					<th>branch<button class="up">오름차순</button><button class="down">내림차순</button></th>
-					<th>Name<button class="up">오름차순</button><button class="down">내림차순</button></th>
-					<th>Date<button class="up">오름차순</button><button class="down">내림차순</button></th>
-					<th>Commit<button class="up">오름차순</button><button class="down">내림차순</button></th>
-					<th>Comment<button class="up">오름차순</button><button class="down">내림차순</button></th>
+					<th scope="col"  onclick="sorting(table, 0)">branch</th>
+					<th scope="col"  onclick="sorting(table, 1)">Name</th>
+					<th scope="col"  onclick="sorting(table, 2)">Date</th>
+					<th scope="col"  onclick="sorting(table, 3)">Commit</th>
+					<th scope="col"  onclick="sorting(table, 4)">Comment</th>
 				</tr>
 			</thead>
-			<tbody>
+			<tbody id="table">
 				<tr>
 					<td>gh-pages</td>
 					<td>설채은</td>
@@ -55,53 +55,50 @@
 		</table>
 	</div>
 </div>
+
 <script type="text/javascript">
-	var table_html;
-	function re_table(line, cols, table_position) {
-		table_html = "";
-		for(var i = 0; i<line; i++) {
-			table_html += "<tr>";
-			for(var j = 0; j<cols; j++) {
-				table_html += "<td>"+new_array[i][j]+"</td>";
-			}
-			table_html += "</tr>";
-		}
-		$(table_position.find("tbody")).html(table_html);
-	}
-
-	$(document).ready(function() {
-		var text_array;
-
-		$("button.up, button.down").on("click", function() {
-			var $this = $(this);
-			var $this_table = $this.parents("table");
-			var $this_start_number = $this.parent().index();
-			
-			var table_th_length = $this.parents("table").find("thead th").length;
-			var table_tr_length = $this.parents("table").find("tbody tr").length;
-
-			new_array = new Array();
-			for(var i = 0; i<table_tr_length; i++) {
-				new_array[i] = [];
-				for(var j = 0 ; j < table_th_length; j++) {
-					text_array = $this_table.find("tbody tr").eq(i).find("td").eq(j).text(); // 값땡겨오는거
-					new_array[i][j] = text_array;
-				}	
-			}
-
-			$this_table.find("th button").removeClass("active");
-			$this.addClass("active");
-			
-			new_array.sort(function (a, b) { 
-				if($this.hasClass("up")) {
-					return a[$this_start_number] < b[$this_start_number] ? -1 : a[$this_start_number] > b[$this_start_number]? 1 : 0;  
-				} else {
-					return a[$this_start_number] > b[$this_start_number] ? -1 : a[$this_start_number] < b[$this_start_number]? 1 : 0;  
-				}
-			});
-
-			$this_table.find("tbody").empty();
-			re_table(table_tr_length, table_th_length, $this_table);
-		});
-	})
+var index;  // cell index
+var toggleBool; // sorting asc, desc 
+function sorting(tbody, index){
+ this.index = index;
+ if(toggleBool){
+  toggleBool = false;
+ }else{
+  toggleBool = true;
+ }
+ var datas= new Array();
+ var tbodyLength = tbody.rows.length;
+ for(var i=0; i<tbodyLength; i++){
+  datas[i] = tbody.rows[i];
+ }
+ // sort by cell[index] 
+ datas.sort(compareCells);
+ for(var i=0; i<tbody.rows.length; i++){
+  // rearrange table rows by sorted rows
+  tbody.appendChild(datas[i]);
+ } 
+}
+function compareCells(a,b) {
+ var aVal = a.cells[index].innerText;
+ var bVal = b.cells[index].innerText;
+ aVal = aVal.replace(/\,/g, '');
+ bVal = bVal.replace(/\,/g, '');
+  if(toggleBool){
+  var temp = aVal;
+  aVal = bVal;
+  bVal = temp;
+ } 
+ if(aVal.match(/^[0-9]+$/) && bVal.match(/^[0-9]+$/)){
+  return parseFloat(aVal) - parseFloat(bVal);
+ }
+ else{
+    if (aVal < bVal){
+     return -1; 
+    }else if (aVal > bVal){
+       return 1; 
+    }else{
+     return 0;    
+    }   
+ }
+}
 </script>
