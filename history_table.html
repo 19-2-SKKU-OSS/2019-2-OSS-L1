@@ -1,104 +1,460 @@
----
-layout: page
-title: null
-nav-menu: false
----
-
-<!-- Table -->
-<div class="table-wrapper">
-	<table>
-		<colgroup>
-			<col style="width:5%" />
-			<col style="width:5%" />
-			<col style="width:5%" />
-			<col style="width:20%" />
-			<col style="width:40%" />
-		</colgroup>
-		<thead>
-			<tr>
-				<th onclick="sorting(table, 0)">branch</th>
-				<th onclick="sorting(table, 1)">Name</th>
-				<th onclick="sorting(table, 2)">Date</th>
-				<th onclick="sorting(table, 3)">Commit</th>
-				<th onclick="sorting(table, 4)">Comment</th>
-			</tr>
-		</thead>
-		<tbody id="table">
-			<tr>
-				<td>gh-pages</td>
-				<td>설채은</td>
-				<td>12-09</td>
-				<td>Update gh-pages</td>
-				<td>Github 정적페이지 생성</td>
-			</tr>
-			<tr>
-				<td>gh-pages</td>
-				<td>설채은</td>
-				<td>12-10</td>
-				<td>Update the gh-pages</td>
-				<td>Github 정적페이지 생성</td>
-			</tr>
-			<tr>
-				<td>branch</td>
-				<td>설채은</td>
-				<td>12-01</td>
-				<td>Update the gh-pages</td>
-				<td>Github 정적페이지 생성</td>
-			</tr>
-			<tr>
-				<td>develop</td>
-				<td>이산하</td>
-				<td>12-01</td>
-				<td>Update the gh-pages</td>
-				<td>Github 정적페이지 생성</td>
-			</tr>
-		</tbody>
-	</table>
+<style type="text/css">
+	.new_table {width:100%; }
+	.new_table caption {font-size:0; position:absolute; left:-9999px; top:-9999px; line-height:0}
+	.new_table th {font-size:14px; font-weight:400; padding:16px 0; background:#fafafa; border-bottom:1px solid #ddd }
+	.new_table th button {border:0 none; display:inline-block; padding:5px 5px 6px; font-size:11px; margin:0 2px; border-radius:3px; cursor:pointer; background:#112f41; color:#fff; outline:0 none}
+	.new_table th button.active {background:#ed553b; color:#fff}
+	.new_table td {font-size:14px; font-weight:400; text-align:center !important; padding:14px 0; border-bottom:1px solid #ddd }
+</style>
+<div class="table_box">
+	<div class="table_inner_box wd1280">
+		<table cellpadding="0" cellspacing="0" class="new_table">
+			<caption>
+				정렬하기
+			</caption>
+			<colgroup>
+				<col style="width:12%" />
+				<col style="width:12%" />
+				<col style="width:12%" />
+				<col style="width:12%" />
+				<col style="width:12%" />
+				<col style="width:12%" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th>branch<button class="up">오름차순</button><button class="down">내림차순</button></th>
+					<th>Name<button class="up">오름차순</button><button class="down">내림차순</button></th>
+					<th>Date<button class="up">오름차순</button><button class="down">내림차순</button></th>
+					<th>Commit<button class="up">오름차순</button><button class="down">내림차순</button></th>
+					<th>Comment<button class="up">오름차순</button><button class="down">내림차순</button></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>develop</td>
+					<td>이산하</td>
+					<td>12-09</td>
+					<td>str_tok c++ code grammar revised</td>
+				</tr>
+				<tr>
+					<td>develop</td>
+					<td>이산하</td>
+					<td>12-09</td>
+					<td>str_tok C code added</td>
+				</tr>				
+				<tr>
+					<td>develop</td>
+					<td>이산하</td>
+					<td>12-09</td>
+					<td>MinMaxABPrunning new C code (revised from C++ code)d</td>
+				</tr>				
+				<tr>
+					<td>develop</td>
+					<td>이산하</td>
+					<td>12-09</td>
+					<td>factorial cpp code formation integrateion</td>
+				</tr>
+				<tr>
+					<td>develop</td>
+					<td>이산하</td>
+					<td>12-04</td>
+					<td>change directory of minmax ab pruning code file</td>
+				</tr>
+				<tr>
+					<td>develop</td>
+					<td>이산하</td>
+					<td>12-04</td>
+					<td>AB prunning base code</td>
+				</tr>
+				<tr>
+					<td>develop</td>
+					<td>이산하</td>
+					<td>12-03</td>
+					<td>countingsort c file added</td>
+				</tr>
+				<tr>
+					<td>develop</td>
+					<td>설채은</td>
+					<td>12-03</td>
+					<td>Update _config.yml</td>
+					<td>Change the page title</td>
+				</tr>
+				<tr>
+					<td>develop</td>
+					<td>설채은</td>
+					<td>12-03</td>
+					<td>Update _config.yml</td>
+					<td>update url, baseurl _config.yml</td>
+				</tr>
+				<tr>
+					<td>develop</td>
+					<td>설채은</td>
+					<td>12-03</td>
+					<td>create project page</td>
+				</tr>
+				<tr>
+					<td>develop</td>
+					<td>설채은</td>
+					<td>12-03</td>
+					<td>Delete index.md</td>
+				</tr>
+				<tr>
+					<td>develop</td>
+					<td>설채은</td>
+					<td>12-03</td>
+					<td>Delete _config.yml</td>
+				</tr><tr>
+					<td>develop</td>
+					<td>설채은</td>
+					<td>12-03</td>
+					<td>Update _config.yml</td>
+					<td>index.md 생성</td>
+				</tr>
+				
+				<tr>
+					<td>develop</td>
+					<td>설채은</td>
+					<td>12-03</td>
+					<td>Update _config.yml</td>
+				</tr>
+				<tr>
+					<td>develop</td>
+					<td>설채은</td>
+					<td>12-03</td>
+					<td>Update _config.yml</td>
+				</tr>
+				<tr>
+					<td>develop</td>
+					<td>윤소희</td>
+					<td>12-03</td>
+					<td>[EDIT] Change file name </td>
+					<td>follow the camel rule </td>
+				</tr>
+				
+				<tr>
+					<td>develop</td>
+					<td>김윤호</td>
+					<td>12-03</td>
+					<td>[ADD] Cocktail Sort</td>
+				</tr>
+				<tr>
+					<td>develop</td>
+					<td>김윤호</td>
+					<td>12-03</td>
+					<td>Merge pull request #3 from 19-2-SKKU-OSS/develop</td>
+					<td>add dijkstra.c</td>
+				</tr>
+				<tr>
+					<td>develop</td>
+					<td>설채은</td>
+					<td>12-03</td>
+					<td>Set theme jekyll-theme-cayman</td>
+				</tr>
+				<tr>
+					<td>develop</td>
+					<td>김윤호</td>
+					<td>12-02</td>
+					<td>Thuava4_algorithm start</td>
+				</tr>
+				<tr>
+					<td>develop</td>
+					<td>김윤호</td>
+					<td>12-02</td>
+					<td>Thuava4_algorithm start</td>
+				</tr>
+				<tr>
+					<td>develop</td>
+					<td>김윤호</td>
+					<td>12-02</td>
+					<td>Thuava4_algorithm start</td>
+				</tr>
+				<tr>
+					<td>develop</td>
+					<td>김윤호</td>
+					<td>12-02</td>
+					<td>Thuava4_algorithm start</td>
+				</tr><tr>
+					<td>develop</td>
+					<td>김윤호</td>
+					<td>12-02</td>
+					<td>Thuava4_algorithm start</td>
+				</tr>
+				<tr>
+					<td>develop</td>
+					<td>김윤호</td>
+					<td>12-02</td>
+					<td>Thuava4_algorithm start</td>
+				</tr>
+				<tr>
+					<td>develop</td>
+					<td>김윤호</td>
+					<td>12-02</td>
+					<td>Thuava4_algorithm start</td>
+				</tr>
+				<tr>
+					<td>origin/algorithm</td>
+					<td>윤소희</td>
+					<td>12-07</td>
+					<td>delete result file</td>
+				</tr>
+				<tr>
+					<td>origin/algorithm</td>
+					<td>윤소희</td>
+					<td>12-07</td>
+					<td>Update Bitap</td>
+				</tr>
+				<tr>
+					<td>origin/algorithm</td>
+					<td>윤소희</td>
+					<td>12-07</td>
+					<td>update bitap.c</td>
+				</tr>
+				<tr>
+					<td>origin/algorithm</td>
+					<td>윤소희</td>
+					<td>12-07</td>
+					<td>update bitap.c</td>
+				</tr>
+				<tr>
+					<td>origin/algorithm</td>
+					<td>김윤호</td>
+					<td>12-07</td>
+					<td>[ADD] CountingInversions</td>
+				</tr>
+				<tr>
+					<td>origin/algorithm</td>
+					<td>김윤호</td>
+					<td>12-06</td>
+					<td>[ADD] CoinChange algorithm</td>
+				</tr>
+				<tr>
+					<td>origin/algorithm</td>
+					<td>성주용</td>
+					<td>12-06</td>
+					<td>[ADD] GeneticAlgorithm</td>
+				</tr>
+				<tr>
+					<td>origin/algorithm</td>
+					<td>성주용</td>
+					<td>12-06</td>
+					<td>[ADD] SelectionSort</td>
+				</tr>
+				<tr>
+					<td>origin/algorithm</td>
+					<td>성주용</td>
+					<td>12-05</td>
+					<td>[ADD] Astar</td>
+				</tr>
+				<tr>
+					<td>origin/algorithm</td>
+					<td>성주용</td>
+					<td>12-05</td>
+					<td>[ADD] QuickSort</td>
+				</tr>
+				<tr>
+					<td>origin/algorithm</td>
+					<td>성주용</td>
+					<td>12-04</td>
+					<td>[ADD] MergeSort</td>
+				</tr>
+				<tr>
+					<td>origin/algorithm</td>
+					<td>성주용</td>
+					<td>12-04</td>
+					<td>[ADD] HeapSort</td>
+				</tr>
+				<tr>
+					<td>origin/algorithm</td>
+					<td>성주용</td>
+					<td>12-04</td>
+					<td>[ADD] InsertionSort</td>
+				</tr>
+				<tr>
+					<td>origin/algorithm</td>
+					<td>성주용</td>
+					<td>12-04</td>
+					<td>[ADD] SelectionSort</td>
+				</tr>
+				<tr>
+					<td>origin/algorithm</td>
+					<td>성주용</td>
+					<td>12-04</td>
+					<td>Delete .DS_Store</td>
+				</tr>
+				<tr>
+					<td>origin/algorithm</td>
+					<td>성주용</td>
+					<td>12-04</td>
+					<td>[ADD] Breadth First Search</td>
+				</tr>
+				<tr>
+					<td>origin/algorithm</td>
+					<td>성주용</td>
+					<td>12-04</td>
+					<td>[ADD] Breadth First Search</td>
+				</tr>
+				<tr>
+					<td>origin/algorithm</td>
+					<td>설채은</td>
+					<td>12-03</td>
+					<td>Delete _config.yml</td>
+				</tr>
+				<tr>
+					<td>origin/algorithm</td>
+					<td>설채은</td>
+					<td>12-03</td>
+					<td>Update _config.yml</td>
+				</tr>
+				<tr>
+					<td>origin/algorithm</td>
+					<td>김윤호</td>
+					<td>12-03</td>
+					<td>[EDIT] Change file name</td>
+					<td>follow the camel rule</td>
+				</tr>
+				<tr>
+					<td>origin/algorithm</td>
+					<td>김윤호</td>
+					<td>12-03</td>
+					<td>[ADD] Cocktail Sort</td>
+				</tr>
+				<tr>
+					<td>origin/algorithm</td>
+					<td>김윤호</td>
+					<td>12-03</td>
+					<td>Merge pull request #3 from 19-2-SKKU-OSS/develop </td>
+					<td>add dijkstra.c</td>
+				</tr>
+				<tr>
+					<td>origin/algorithm</td>
+					<td>윤소희</td>
+					<td>12-03</td>
+					<td>add dijkstra.c</td>
+				</tr>
+				<tr>
+					<td>origin/algorithm</td>
+					<td>설채은</td>
+					<td>12-03</td>
+					<td>Set theme jekyll-theme-cayman</td>
+				</tr>
+				<tr>
+					<td>kruskal</td>
+					<td>윤소희</td>
+					<td>12-05</td>
+					<td>add kruskal.c</td>
+				</tr>
+				<tr>
+					<td>java</td>
+					<td>윤소희</td>
+					<td>12-05</td>
+					<td>update AStarSearch</td>
+				</tr>
+				<tr>
+					<td>java</td>
+					<td>윤소희</td>
+					<td>12-05</td>
+					<td>update Astar</td>
+				</tr>
+				<tr>
+					<td>java</td>
+					<td>윤소희</td>
+					<td>12-05</td>
+					<td>add RunMaze.class</td>
+				</tr>
+				<tr>
+					<td>java</td>
+					<td>윤소희</td>
+					<td>12-05</td>
+					<td>add Square.class</td>
+				</tr>
+				<tr>
+					<td>java</td>
+					<td>윤소희</td>
+					<td>12-05</td>
+					<td>add Maze.class</td>
+				</tr>
+				<tr>
+					<td>java</td>
+					<td>윤소희</td>
+					<td>12-05</td>
+					<td>add Runmaze.java</td>
+				</tr>
+				<tr>
+					<td>java</td>
+					<td>윤소희</td>
+					<td>12-05</td>
+					<td>add A.class</td>
+				</tr>
+				<tr>
+					<td>java</td>
+					<td>윤소희</td>
+					<td>12-05</td>
+					<td>add astar.java</td>
+				</tr>
+				<tr>
+					<td>java</td>
+					<td>윤소희</td>
+					<td>12-05</td>
+					<td>add prim.class</td>
+				</tr>
+				<tr>
+					<td>java</td>
+					<td>윤소희</td>
+					<td>12-05</td>
+					<td>update prim.java</td>
+				</tr>
+				
+			</tbody>
+		</table>
+	</div>
 </div>
-
 <script type="text/javascript">
-var index;  // cell index
-var toggleBool; // sorting asc, desc 
-function sorting(tbody, index){
- this.index = index;
- if(toggleBool){
-  toggleBool = false;
- }else{
-  toggleBool = true;
- }
- var datas= new Array();
- var tbodyLength = tbody.rows.length;
- for(var i=0; i<tbodyLength; i++){
-  datas[i] = tbody.rows[i];
- }
- // sort by cell[index] 
- datas.sort(compareCells);
- for(var i=0; i<tbody.rows.length; i++){
-  // rearrange table rows by sorted rows
-  tbody.appendChild(datas[i]);
- } 
-}
-function compareCells(a,b) {
- var aVal = a.cells[index].innerText;
- var bVal = b.cells[index].innerText;
- aVal = aVal.replace(/\,/g, '');
- bVal = bVal.replace(/\,/g, '');
-  if(toggleBool){
-  var temp = aVal;
-  aVal = bVal;
-  bVal = temp;
- } 
- if(aVal.match(/^[0-9]+$/) && bVal.match(/^[0-9]+$/)){
-  return parseFloat(aVal) - parseFloat(bVal);
- }
- else{
-    if (aVal < bVal){
-     return -1; 
-    }else if (aVal > bVal){
-       return 1; 
-    }else{
-     return 0;    
-    }   
- }
-}
+	var table_html;
+	function re_table(line, cols, table_position) {
+		table_html = "";
+		for(var i = 0; i<line; i++) {
+			table_html += "<tr>";
+			for(var j = 0; j<cols; j++) {
+				table_html += "<td>"+new_array[i][j]+"</td>";
+			}
+			table_html += "</tr>";
+		}
+		$(table_position.find("tbody")).html(table_html);
+	}
+
+	$(document).ready(function() {
+		var text_array;
+
+		$("button.up, button.down").on("click", function() {
+			var $this = $(this);
+			var $this_table = $this.parents("table");
+			var $this_start_number = $this.parent().index();
+			
+			var table_th_length = $this.parents("table").find("thead th").length;
+			var table_tr_length = $this.parents("table").find("tbody tr").length;
+
+			new_array = new Array();
+			for(var i = 0; i<table_tr_length; i++) {
+				new_array[i] = [];
+				for(var j = 0 ; j < table_th_length; j++) {
+					text_array = $this_table.find("tbody tr").eq(i).find("td").eq(j).text(); // 값땡겨오는거
+					new_array[i][j] = text_array;
+				}	
+			}
+
+			$this_table.find("th button").removeClass("active");
+			$this.addClass("active");
+			
+			new_array.sort(function (a, b) { 
+				if($this.hasClass("up")) {
+					return a[$this_start_number] < b[$this_start_number] ? -1 : a[$this_start_number] > b[$this_start_number]? 1 : 0;  
+				} else {
+					return a[$this_start_number] > b[$this_start_number] ? -1 : a[$this_start_number] < b[$this_start_number]? 1 : 0;  
+				}
+			});
+
+			$this_table.find("tbody").empty();
+			re_table(table_tr_length, table_th_length, $this_table);
+		});
+	})
 </script>
