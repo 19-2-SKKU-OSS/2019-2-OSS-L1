@@ -55,7 +55,6 @@
 		</table>
 	</div>
 </div>
-
 <script type="text/javascript">
 	var table_html;
 	function re_table(line, cols, table_position) {
@@ -78,8 +77,8 @@
 			var $this_table = $this.parents("table");
 			var $this_start_number = $this.parent().index();
 			
-			var table_th_length = $this.parents("table").find("thead th").length; //테이블 칸의 갯수
-			var table_tr_length = $this.parents("table").find("tbody tr").length; //테이블 내용 줄 갯수
+			var table_th_length = $this.parents("table").find("thead th").length;
+			var table_tr_length = $this.parents("table").find("tbody tr").length;
 
 			new_array = new Array();
 			for(var i = 0; i<table_tr_length; i++) {
@@ -92,7 +91,7 @@
 
 			$this_table.find("th button").removeClass("active");
 			$this.addClass("active");
-
+			
 			new_array.sort(function (a, b) { 
 				if($this.hasClass("up")) {
 					return a[$this_start_number] < b[$this_start_number] ? -1 : a[$this_start_number] > b[$this_start_number]? 1 : 0;  
@@ -100,9 +99,9 @@
 					return a[$this_start_number] > b[$this_start_number] ? -1 : a[$this_start_number] < b[$this_start_number]? 1 : 0;  
 				}
 			});
-      
+
 			$this_table.find("tbody").empty();
 			re_table(table_tr_length, table_th_length, $this_table);
 		});
 	})
-</script>	
+</script>
