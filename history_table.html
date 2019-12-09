@@ -1,7 +1,7 @@
 ---
 layout: page
 title: null
-nav-menu: null
+nav-menu: false
 ---
 
 <!-- Table -->
@@ -16,11 +16,11 @@ nav-menu: null
 		</colgroup>
 		<thead>
 			<tr>
-				<th onclick="sorting(table, 0)">branch</th>
-				<th onclick="sorting(table, 1)">Name</th>
-				<th onclick="sorting(table, 2)">Date</th>
-				<th onclick="sorting(table, 3)">Commit</th>
-				<th onclick="sorting(table, 4)">Comment</th>
+				<th scope="col" onclick="sorting(table, 0)">branch</th>
+				<th scope="col" onclick="sorting(table, 1)">Name</th>
+				<th scope="col" onclick="sorting(table, 2)">Date</th>
+				<th scope="col" onclick="sorting(table, 3)">Commit</th>
+				<th scope="col" onclick="sorting(table, 4)">Comment</th>
 			</tr>
 		</thead>
 		<tbody id="table">
