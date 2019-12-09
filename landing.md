@@ -6,13 +6,14 @@ image: assets/images/pic07.jpg
 nav-menu: true
 ---
 
+m
 <!-- Main -->
 <div id="main">
 
 <section id="one" class="spotlights">
 	<section>
-		<div style="width: 33%;margin:0 auto;">
-			<div class="inner">
+		<div style="width: 33%;">
+			<div class="inner" style="margin: 10px 0px 0px 10px;">
 				<a href="generic.html" class="image">
 					<img src="assets/images/kimyoonho.jpg" alt="" width="180" height="240" data-position="center center" />
 				</a>
@@ -26,24 +27,24 @@ nav-menu: true
 			</div>
 		</div>
 		<div style="width: 33%;margin:0 auto;">
-			<a href="generic.html" class="image">
-				<img src="assets/images/seolchaeeun.jpg" alt="" width="180" height="240" data-position="center center" />
-			</a>
 			<div class="inner">
+				<a href="generic.html" class="image">
+					<img src="assets/images/seolchaeeun.jpg" alt="" width="180" height="240" data-position="center center" />
+				</a>
 				<header class="major">
 					<h3>설채은</h3>
 				</header>
 				<p><h4>소프트웨어학과<br/>GitHub ID : SeolChaeEun</h4><li>GitHub 정적페이지 담당</li><li>정적 페이지 Commit, Project, 팀원 정보 업로드</li></p>
 				<ul class="actions">
-					<li><a href="https://github.com/rladbsgh7586" target="_blank" class="button">github</a></li>
+					<li><a href="https://github.com/SeolChaeEun" target="_blank" class="button">github</a></li>
 				</ul>
 			</div>
 		</div>
 		<div style="width: 33%;margin:0 auto;">
-			<a href="generic.html" class="image">
-				<img src="assets/images/seongjooyoung.jpg" alt="" width="180" height="240" data-position="center center" />
-			</a>
 			<div class="inner">
+				<a href="generic.html" class="image">
+					<img src="assets/images/seongjooyoung.jpg" alt="" width="180" height="240" data-position="center center" />
+				</a>
 				<header class="major">
 					<h3>성주용</h3>
 				</header>
@@ -56,10 +57,10 @@ nav-menu: true
 	</section>
 	<section>
 		<div style="width: 50%;margin:0 auto;">
-			<a href="generic.html" class="image">
-				<img src="assets/images/yoonsohee.jpg" alt="" width="180" height="240" data-position="center center" />
-			</a>
 			<div class="inner">
+				<a href="generic.html" class="image">
+					<img src="assets/images/yoonsohee.jpg" alt="" width="180" height="240" data-position="center center" />
+				</a>
 				<header class="major">
 					<h3>윤소희</h3>
 				</header>
@@ -70,10 +71,10 @@ nav-menu: true
 			</div>
 		</div>
 		<div style="width: 50%;margin:0 auto;">
-			<a href="generic.html" class="image">
-				<img src="assets/images/leesanha.jpg" alt="" width="180" height="240" data-position="center center" />
-			</a>
 			<div class="inner">
+				<a href="generic.html" class="image">
+					<img src="assets/images/leesanha.jpg" alt="" width="180" height="240" data-position="center center" />
+				</a>
 				<header class="major">
 					<h3>이산하</h3>
 				</header>
