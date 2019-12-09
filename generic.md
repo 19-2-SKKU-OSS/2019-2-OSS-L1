@@ -2,7 +2,7 @@
 layout: post
 title: Project Working
 description: About our Project
-image: assets/images/pic11.jpg
+image: assets/images/algorithm-logo.jpg
 nav-menu: true
 ---
 
