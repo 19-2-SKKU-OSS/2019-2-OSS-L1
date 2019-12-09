@@ -5,12 +5,17 @@ int Factorial(int n);
 
 int main(){
 
-    int result;
+    long result;
     int n;
+    cout<<"Enter an integer to find its factorial"<<endl;
     cin>>n;
 
-    result = Factorial(n);
-    cout  << result << endl;
+    if(n<0)
+    	cout<<"Factorial of negative integers isn't defined."<<endl;
+    else{
+	    result = Factorial(n);
+   		cout  <<n<<"! = " <<result << endl;
+    }
 
     return 0;
 }
