@@ -47,7 +47,7 @@ nav-menu: true
 				<header class="major">
 					<h3>성주용</h3>
 				</header>
-				<p><h4>인공지능융합전공<br/>GitHub ID : tmznwnel</h4><li>python 알고리즘 구현</li><li>알고리즘 코드 리뷰 및 수정</li></p>
+				<p><h4>인공지능융합전공<br/>GitHub ID : tmznwnel</h4><li>C, python 알고리즘 구현</li><li>알고리즘 코드 리뷰 및 수정</li></p>
 				<ul class="actions">
 					<li><a href="https://github.com/tmznwnel" target="_blank" class="button">github</a></li>
 				</ul>
