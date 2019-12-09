@@ -1,0 +1,93 @@
+---
+layout: landing
+title: Issue
+description: Our Issue log. You can sort by branch, name, date, and commit. Click it.<br/>This will be uploaded soon
+image: null
+author: null
+nav-menu: true
+---
+<!-- Main -->
+<div id="main">
+<section id="one">
+  <section>
+    <div class="inner">
+
+	<!-- Table -->
+	<div class="table-wrapper" style="margin: 15px 15px 15px 15px;">
+		<table>
+			<colgroup>
+				<col style="width:5%" />
+				<col style="width:5%" />
+				<col style="width:5%" />
+				<col style="width:20%" />
+				<col style="width:40%" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col" onclick="sorting(table, 0)">branch</th>
+					<th scope="col" onclick="sorting(table, 1)">Name</th>
+					<th scope="col" onclick="sorting(table, 2)">Date</th>
+					<th scope="col" onclick="sorting(table, 3)">Commit</th>
+					<th scope="col" onclick="sorting(table, 4)">Comment</th>
+				</tr>
+			</thead>
+			<tbody id="table">
+					<tr>
+						<td>develop</td>
+						<td>이산하</td>
+						<td>12-09</td>
+						<td>str_tok c++ code grammar revised</td>
+					</tr>
+			</tbody>
+		</table>
+	</div>
+     </div>
+  </section>
+<section>
+</div>
+<script type="text/javascript">
+var index;  // cell index
+var toggleBool; // sorting asc, desc 
+function sorting(tbody, index){
+ this.index = index;
+ if(toggleBool){
+  toggleBool = false;
+ }else{
+  toggleBool = true;
+ }
+ var datas= new Array();
+ var tbodyLength = tbody.rows.length;
+ for(var i=0; i<tbodyLength; i++){
+  datas[i] = tbody.rows[i];
+ }
+ // sort by cell[index] 
+ datas.sort(compareCells);
+ for(var i=0; i<tbody.rows.length; i++){
+  // rearrange table rows by sorted rows
+  tbody.appendChild(datas[i]);
+ } 
+}
+function compareCells(a,b) {
+ var aVal = a.cells[index].innerText;
+ var bVal = b.cells[index].innerText;
+ aVal = aVal.replace(/\,/g, '');
+ bVal = bVal.replace(/\,/g, '');
+  if(toggleBool){
+  var temp = aVal;
+  aVal = bVal;
+  bVal = temp;
+ } 
+ if(aVal.match(/^[0-9]+$/) && bVal.match(/^[0-9]+$/)){
+  return parseFloat(aVal) - parseFloat(bVal);
+ }
+ else{
+    if (aVal < bVal){
+     return -1; 
+    }else if (aVal > bVal){
+       return 1; 
+    }else{
+     return 0;    
+    }   
+ }
+}
+</script>
