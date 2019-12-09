@@ -11,7 +11,7 @@ nav-menu: true
 
 <section id="one" class="spotlights">
 	<section>
-		<div style="width: 33%;">
+		<div style="width: 33%;margin:0 auto;">
 			<div class="inner">
 				<a href="generic.html" class="image">
 					<img src="assets/images/kimyoonho.jpg" alt="" width="180" height="240" data-position="center center" />
@@ -25,7 +25,7 @@ nav-menu: true
 				</ul>
 			</div>
 		</div>
-		<div style="width: 33%;">
+		<div style="width: 33%;margin:0 auto;">
 			<a href="generic.html" class="image">
 				<img src="assets/images/seolchaeeun.jpg" alt="" width="180" height="240" data-position="center center" />
 			</a>
@@ -39,7 +39,7 @@ nav-menu: true
 				</ul>
 			</div>
 		</div>
-		<div style="width: 33%;">
+		<div style="width: 33%;margin:0 auto;">
 			<a href="generic.html" class="image">
 				<img src="assets/images/seongjooyoung.jpg" alt="" width="180" height="240" data-position="center center" />
 			</a>
@@ -55,7 +55,7 @@ nav-menu: true
 		</div>
 	</section>
 	<section>
-		<div style="width: 50%;">
+		<div style="width: 50%;margin:0 auto;">
 			<a href="generic.html" class="image">
 				<img src="assets/images/yoonsohee.jpg" alt="" width="180" height="240" data-position="center center" />
 			</a>
@@ -69,7 +69,7 @@ nav-menu: true
 				</ul>
 			</div>
 		</div>
-		<div style="width: 50%;">
+		<div style="width: 50%;margin:0 auto;">
 			<a href="generic.html" class="image">
 				<img src="assets/images/leesanha.jpg" alt="" width="180" height="240" data-position="center center" />
 			</a>
