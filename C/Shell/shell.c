@@ -25,9 +25,9 @@ void shell_sort(int list[], int n){
   int i, gap;
 
   for(gap=n/2; gap>0; gap=gap/2){
-    if((gap%2) == 0)(
+    if((gap%2) == 0){
       gap++; // gap을 홀수로 만든다.
-    )
+    }
 
     // 부분 리스트의 개수는 gap과 같다.
     for(i=0; i<gap; i++){
