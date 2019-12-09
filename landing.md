@@ -2,7 +2,7 @@
 title: Contributers
 layout: landing
 description: 'Our Team Members'
-image: assets/images/pic07.jpg
+image: assets/images/teampro.png
 nav-menu: true
 ---
 
