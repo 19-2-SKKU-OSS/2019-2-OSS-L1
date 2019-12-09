@@ -6,14 +6,13 @@ image: assets/images/pic07.jpg
 nav-menu: true
 ---
 
-m
 <!-- Main -->
 <div id="main">
 
 <section id="one" class="spotlights">
 	<section>
 		<div style="width: 33%;">
-			<div class="inner" style="margin: 10px 0px 0px 10px;">
+			<div class="inner" style="margin: 50px 0px 0px 50px;">
 				<a href="generic.html" class="image">
 					<img src="assets/images/kimyoonho.jpg" alt="" width="180" height="240" data-position="center center" />
 				</a>
@@ -27,7 +26,7 @@ m
 			</div>
 		</div>
 		<div style="width: 33%;margin:0 auto;">
-			<div class="inner">
+			<div class="inner" style="margin: 50px 0px 0px 50px;">
 				<a href="generic.html" class="image">
 					<img src="assets/images/seolchaeeun.jpg" alt="" width="180" height="240" data-position="center center" />
 				</a>
@@ -41,7 +40,7 @@ m
 			</div>
 		</div>
 		<div style="width: 33%;margin:0 auto;">
-			<div class="inner">
+			<div class="inner" style="margin: 50px 0px 0px 50px;">
 				<a href="generic.html" class="image">
 					<img src="assets/images/seongjooyoung.jpg" alt="" width="180" height="240" data-position="center center" />
 				</a>
@@ -57,7 +56,7 @@ m
 	</section>
 	<section>
 		<div style="width: 50%;margin:0 auto;">
-			<div class="inner">
+			<div class="inner" style="margin: 50px 0px 0px 50px;">
 				<a href="generic.html" class="image">
 					<img src="assets/images/yoonsohee.jpg" alt="" width="180" height="240" data-position="center center" />
 				</a>
@@ -71,7 +70,7 @@ m
 			</div>
 		</div>
 		<div style="width: 50%;margin:0 auto;">
-			<div class="inner">
+			<div class="inner" style="margin: 50px 0px 0px 50px;">
 				<a href="generic.html" class="image">
 					<img src="assets/images/leesanha.jpg" alt="" width="180" height="240" data-position="center center" />
 				</a>
