@@ -46,24 +46,29 @@ int *construct(int arr[],int n){
 	int max_size = 2*int(pow(2,x))-1;
 	int *st=new int [max_size];
 	constructUtil(arr,0,n-1,st,0);
-	/*for(int i=0;i<max_size;i++)
-		cout<<st[i]<<" ";
-	cout<<endl;*/
+	/*
+	 * for(int i=0;i<max_size;i++)
+		printf("%d ".st[i]);
+	printf("\n");
+	*/
 	return st;
+
 }
 
 int main()
 {
-	freopen("in.txt","r",stdin);
 	int n;
-	cin>>n;
+	scanf("%d",&n);
+	
 	int a[n];
 	for(int i=0;i<n;i++)
-		cin>>a[i];
+		scanf("%d".&a[i]);
+		
 	int *st = construct(a,n);
-	cout<<getSum(st,0,n-1,2,4,0)<<endl;
+	printf("%d\n",getSum(st,0,n-1,2,4,0);
 	updateValue(a,st,n,2,10);
-	cout<<getSum(st,0,n-1,1,3,0)<<endl;
+
+	printf("%d\n",getSum(st,0,n-1,1,3,0);
 	return 0;
 }
 
