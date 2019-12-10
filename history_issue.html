@@ -1,7 +1,7 @@
 ---
 layout: landing
 title: Issue
-description: Our Issue log. You can sort by branch, name, date, and commit. Click it.<br/>This will be uploaded soon
+description: Our Issue log. You can sort by branch, name, date, and commit. Click it.
 image: null
 author: null
 nav-menu: true
@@ -19,16 +19,18 @@ nav-menu: true
 				<col style="width:5%" />
 				<col style="width:5%" />
 				<col style="width:5%" />
+				<col style="width:5%" />
 				<col style="width:20%" />
 				<col style="width:40%" />
 			</colgroup>
 			<thead>
 				<tr>
-					<th scope="col" onclick="sorting(table, 0)">branch</th>
+					<th scope="col" onclick="sorting(table, 0)">Number</th>
 					<th scope="col" onclick="sorting(table, 1)">Name</th>
 					<th scope="col" onclick="sorting(table, 2)">Date</th>
-					<th scope="col" onclick="sorting(table, 3)">Commit</th>
-					<th scope="col" onclick="sorting(table, 4)">Comment</th>
+					<th scope="col" onclick="sorting(table, 3)">Category</th>
+					<th scope="col" onclick="sorting(table, 4)">Language</th>
+					<th scope="col" onclick="sorting(table, 4)">Issue</th>
 				</tr>
 			</thead>
 			<tbody id="table">
