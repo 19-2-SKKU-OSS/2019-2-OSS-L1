@@ -1,5 +1,7 @@
-#include<math.h>
-#include<stdio.h>
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
 
 int getMid(int a,int b){
 	return (a+b)/2;
@@ -43,8 +45,9 @@ int constructUtil(int arr[],int ss,int se,int *st,int si){
 
 int *construct(int arr[],int n){
 	int x = (int)ceil(log2(n));
-	int max_size = 2*int(pow(2,x))-1;
-	int *st=int [max_size];
+	//double pow = pow(2.0,x);
+	int max_size = 2*(int)pow(2,x)-1;
+	int* st = (int*)malloc(sizeof(int)*max_size);
 	constructUtil(arr,0,n-1,st,0);
 	/*
 	 * for(int i=0;i<max_size;i++)
@@ -62,7 +65,7 @@ int main()
 	
 	int a[n];
 	for(int i=0;i<n;i++)
-		scanf("%d".&a[i]);
+		scanf("%d",&a[i]);
 		
 	int *st = construct(a,n);
 	printf("%d\n",getSum(st,0,n-1,2,4,0));
