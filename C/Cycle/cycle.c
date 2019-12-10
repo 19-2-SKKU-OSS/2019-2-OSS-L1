@@ -3,7 +3,7 @@
 //
 #include <stdio.h>
 
-#define SWAP(a,b,tmp)	{tmp = a;	a=b;	b=tmp;}
+#define SWAP(a,b)	{int tmp;	tmp = a;	a=b;	b=tmp;}
  
 // Function sort the array using Cycle sort
 void cycleSort (int arr[], int n)
