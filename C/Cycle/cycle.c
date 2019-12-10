@@ -75,7 +75,7 @@ int main()
  
     printf("After sort :\n");
     for (int i =0; i<n; i++)
-        cout << arr[i] << " ";
+        printf("%d ",arr[i]);
     return 0;
 }
 
