@@ -1,5 +1,5 @@
 # include <stdio.h>
-# define MAX_SIZE 11
+# define MAX_SIZE 10
 
 // gap만큼 떨어진 요소들을 삽입 정렬
 // 정렬의 범위는 first에서 last까지
