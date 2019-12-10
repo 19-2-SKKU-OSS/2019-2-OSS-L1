@@ -3,6 +3,7 @@
 //
 #include <stdio.h>
 
+//swap function
 #define SWAP(a,b)	{int tmp;	tmp = a;	a=b;	b=tmp;}
  
 // Function sort the array using Cycle sort
@@ -64,16 +65,18 @@ void cycleSort (int arr[], int n)
     }
  
     // Number of memory writes or swaps
-    // cout << writes << endl ;
+    // printf("%d\n".writes);
 }
  
 // Driver program to test above function
 int main()
 {
+	//array
     int arr[] = {1, 8, 3, 9, 10, 10, 2, 4 };
     int n = sizeof(arr)/sizeof(arr[0]);
     cycleSort(arr,  n) ;
  
+    //print result
     printf("After sort :\n");
     for (int i =0; i<n; i++)
         printf("%d ",arr[i]);
