@@ -1,4 +1,4 @@
-
+#include<math.h>
 #include<stdio.h>
 
 int getMid(int a,int b){
@@ -44,7 +44,7 @@ int constructUtil(int arr[],int ss,int se,int *st,int si){
 int *construct(int arr[],int n){
 	int x = (int)ceil(log2(n));
 	int max_size = 2*int(pow(2,x))-1;
-	int *st=new int [max_size];
+	int *st=int [max_size];
 	constructUtil(arr,0,n-1,st,0);
 	/*
 	 * for(int i=0;i<max_size;i++)
@@ -65,10 +65,10 @@ int main()
 		scanf("%d".&a[i]);
 		
 	int *st = construct(a,n);
-	printf("%d\n",getSum(st,0,n-1,2,4,0);
+	printf("%d\n",getSum(st,0,n-1,2,4,0));
 	updateValue(a,st,n,2,10);
 
-	printf("%d\n",getSum(st,0,n-1,1,3,0);
+	printf("%d\n",getSum(st,0,n-1,1,3,0));
 	return 0;
 }
 
