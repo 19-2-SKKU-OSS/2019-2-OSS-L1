@@ -3,6 +3,7 @@
 //
 #include <stdio.h>
 
+#define SWAP(a,b,tmp)	{tmp = a;	a=b;	b=tmp;}
  
 // Function sort the array using Cycle sort
 void cycleSort (int arr[], int n)
@@ -35,7 +36,7 @@ void cycleSort (int arr[], int n)
         // put the item to it's right position
         if (pos != cycle_start)
         {
-            swap(item, arr[pos]);
+            SWAP(item, arr[pos]);
             writes++;
         }
  
@@ -56,7 +57,7 @@ void cycleSort (int arr[], int n)
             // put the item to it's right position
             if (item != arr[pos])
             {
-                swap(item, arr[pos]);
+                SWAP(item, arr[pos]);
                 writes++;
             }
         }
