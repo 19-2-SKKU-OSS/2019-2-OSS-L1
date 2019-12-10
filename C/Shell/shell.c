@@ -1,5 +1,5 @@
 # include <stdio.h>
-# define MAX_SIZE 10
+# define MAX_SIZE 11
 
 // gap만큼 떨어진 요소들을 삽입 정렬
 // 정렬의 범위는 first에서 last까지
@@ -40,7 +40,13 @@ void shell_sort(int list[], int n){
 void main(){
   int i;
   int n = MAX_SIZE;
-  int list[n] = {10, 8, 6, 20, 4, 3, 22, 1, 0, 15, 16};
+  int list[n];
+ 
+ 
+
+  for(i=0;i<n;i++){
+	  scanf("%d ",&list[i]);
+  }
 
   // 셸 정렬 수행
   shell_sort(list, n);
