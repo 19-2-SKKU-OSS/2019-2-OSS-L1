@@ -14,12 +14,12 @@ int main()
     printf("Write a sentence: ");
     getline(&gfg, &size, stdin);
     gfg[strlen(gfg)-1] = '\0';
- 
-    // Declaration of delimiter, here 
+
     char* tok;
  
     // Use of strtok
     // get first token
+    // delimiter is white space here
     tok = strtok(gfg, " ");
  
     // Checks for delimeter
