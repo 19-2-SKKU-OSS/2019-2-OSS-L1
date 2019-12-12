@@ -1,3 +1,6 @@
+//C implementation to generate 64 bit (16 hex chars) hash
+//pearson function
+
  void Pearson16(const unsigned char *x, size_t len, 
  char *hex, size_t hexlen) 
  {
