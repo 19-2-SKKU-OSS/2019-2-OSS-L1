@@ -8,14 +8,15 @@ inline int min(int a, int b){
 }
 main() {
    int vert, edge, i, j, k, c;
-
-   cout << "Enter no of vertices: ";
-   cin >> vert;
-   cout << "Enter no of edges: ";
-   cin >> edge;
-   cout << "Enter the EDGE Costs:\n";
+   
+   //cout << "Enter no of vertices: ";
+   scanf("%d",&vert);
+  // cout << "Enter no of edges: ";
+   scanf("%d",&edge);
+  // cout << "Enter the EDGE Costs:\n";
    for (k = 1; k <= edge; k++) { //take the input and store it into adj and cost matrix
-      cin >> i >> j >> c;
+     scanf("%d %d %d",&i,&j,&c);
+	
       adj[i][j] = cost[i][j] = c;
    }
    for (i = 1; i <= vert; i++)
@@ -27,12 +28,15 @@ main() {
       for (i = 1; i <= vert; i++)
          for (j = 1; j <= vert; j++)
             adj[i][j] = min(adj[i][j], adj[i][k] + adj[k][j]); //find minimum path from i to j through k
-   cout << "Resultant adj matrix\n";
+  // cout << "Resultant adj matrix\n";
    for (i = 1; i <= vert; i++) {
       for (j = 1; j <= vert; j++) {
             if (adj[i][j] != INF)
-               cout << adj[i][j] << " ";
+    
+		printf("%d ",adj[i][j]); 
+		   
       }
-      cout << "\n";
+      printf("\n");
+  
    }
 }
