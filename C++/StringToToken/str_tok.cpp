@@ -1,8 +1,10 @@
 // C code to demonstrate working of
 // strtok
-#include <string.h>
-#include <stdio.h>
- 
+#include <cstring>
+#include <iostream>
+
+ using namespace std;
+
 // Driver function
 int main()
 {
@@ -19,7 +21,7 @@ int main()
  
     // Checks for delimeter
     while (tok != 0) {
-        printf(" %s\n", tok);
+        cout<<tok<<endl;
  
         // Use of strtok
         // go through other tokens
