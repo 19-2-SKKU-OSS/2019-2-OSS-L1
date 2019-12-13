@@ -6,14 +6,13 @@ int cost[10][10], adj[10][10];
 inline int min(int a, int b){
    return (a<b)?a:b;
 }
-main() {
+void main() {
    int vert, edge, i, j, k, c;
-   
-   //cout << "Enter no of vertices: ";
+   printf("Enter no of vertices: ");
    scanf("%d",&vert);
-  // cout << "Enter no of edges: ";
+   printf("Enter no of edges: ");
    scanf("%d",&edge);
-  // cout << "Enter the EDGE Costs:\n";
+   printf("Enter the EDGE Costs:\n");
    for (k = 1; k <= edge; k++) { //take the input and store it into adj and cost matrix
      scanf("%d %d %d",&i,&j,&c);
 	
@@ -28,7 +27,8 @@ main() {
       for (i = 1; i <= vert; i++)
          for (j = 1; j <= vert; j++)
             adj[i][j] = min(adj[i][j], adj[i][k] + adj[k][j]); //find minimum path from i to j through k
-  // cout << "Resultant adj matrix\n";
+ 
+   printf("Resultant adj matrix\n");
    for (i = 1; i <= vert; i++) {
       for (j = 1; j <= vert; j++) {
             if (adj[i][j] != INF)
